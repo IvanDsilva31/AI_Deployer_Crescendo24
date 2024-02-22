@@ -39,4 +39,14 @@ body {
     font-weight: bold;
     color: #dc3545;
   }
+  /* Custom CSS for ISRO Mission Dashboard */
+
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
   
