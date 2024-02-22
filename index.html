@@ -6,7 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ISRO Mission Dashboard</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom CSS for the Hero section */
+    .hero {
+      height: 75vh; /* 75% of viewport height */
+      background-image: url('images/hero-img1.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 800; /* Extra bold */
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  </style>
 </head>
 
 <body>
@@ -35,42 +57,52 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+      <h1>#ISROVistaar</h1>
+      <p>Pushing the boundaries of space exploration with ISRO Vistaar.</p>
+      <a href="about.html" class="btn btn-primary">About Us</a>
+    </div>
+  </section>
+
   <!-- Dashboard Content -->
   <div class="container mt-4">
     <div class="row">
       <div class="col-md-4">
-        <div class="card">
-          <img src="mission1.jpg" class="card-img-top" alt="Mission 1">
+        <div class="card h-100">
+          <img src="images/Chandrayaan.jpg" class="card-img-top" alt="Chandrayaan">
           <div class="card-body">
-            <h5 class="card-title">Mission 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5 class="card-title">Chandrayaan Mission</h5>
+            <p class="card-text">Chandrayaan was India's first lunar probe. It was launched by the Indian Space Research Organisation in October 2008.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="mission2.jpg" class="card-img-top" alt="Mission 2">
+        <div class="card h-100">
+          <img src="images/Cartosat2.jpg" class="card-img-top" alt="Cartosat-2">
           <div class="card-body">
-            <h5 class="card-title">Mission 2</h5>
-            <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h5 class="card-title">Cartosat-2 Mission</h5>
+            <p class="card-text">Cartosat-2 is an Earth observation satellite in a sun-synchronous orbit and the second of the Cartosat series of satellites. It was launched by ISRO in January 2007.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card">
-          <img src="mission3.jpg" class="card-img-top" alt="Mission 3">
+        <div class="card h-100">
+          <img src="images/Mangalyaan.jpg" class="card-img-top" alt="Mangalyaan">
           <div class="card-body">
-            <h5 class="card-title">Mission 3</h5>
-            <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
+            <h5 class="card-title">Mangalyaan Mission</h5>
+            <p class="card-text">Mangalyaan, also known as the Mars Orbiter Mission, is India's first interplanetary mission to Mars. It was launched in November 2013.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <br>
 
   <!-- Footer -->
   <footer class="footer mt-auto py-3 bg-dark">
