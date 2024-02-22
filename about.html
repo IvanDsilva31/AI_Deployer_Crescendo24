@@ -33,33 +33,60 @@
     .team-member p {
       color: #6c757d; /* Gray text color */
     }
+    .hero-section {
+      height: 400px; /* Height of the hero section */
+      background-image: url('hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #000000;
+    }
+    .hero-section h1 {
+      font-size: 48px;
+      font-weight: 800; /* Extra bold */
+      margin-bottom: 20px;
+    }
+    .hero-section p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
   </style>
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">ISRO Mission Board</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Dashboard</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="about.html">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Missions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <a class="navbar-brand" href="#">ISRO <span class="text-muted">विस्तार</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mission.html">Missions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Welcome to the ISRO Mission Board - Where Dreams Take Flight</p>
+    </div>
+  </section>
 
 <!-- About Section -->
 <section class="about-section">
