@@ -1,0 +1,42 @@
+/* Custom CSS for ISRO Mission Dashboard */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .card-body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Key Metrics Section */
+  #key-metrics {
+    border: 1px solid #007bff;
+  }
+  
+  /* Mission Status and Events Section */
+  #mission-status {
+    border: 1px solid #28a745;
+  }
+  
+  /* Mission Data Showcase Section */
+  #mission-data {
+    border: 1px solid #dc3545;
+  }
+  
+  /* Countdown Timer */
+  #countdown {
+    font-weight: bold;
+    color: #dc3545;
+  }
+  

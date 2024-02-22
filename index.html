@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISRO Mission Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4">ISRO Mission Dashboard</h1>
+    <!-- Key Metrics Section -->
+    <div id="key-metrics" class="card mt-4">
+      <div class="card-header">
+        Key Metrics
+      </div>
+      <div class="card-body">
+        <!-- Add your key mission metrics here -->
+        <p>Mission Success Rate: 95%</p>
+        <p>Number of Active Missions: 10</p>
+        <p>Number of Completed Missions: 50</p>
+      </div>
+    </div>
+
+    <!-- Mission Status and Events Section -->
+    <div id="mission-status" class="card mt-4">
+      <div class="card-header">
+        Mission Status and Events
+      </div>
+      <div class="card-body">
+        <!-- Add your mission status and events here -->
+        <p>Next Launch: Chandrayaan-3 - <span id="countdown"></span></p>
+        <p>Recent Event: Successful deployment of satellite XYZ</p>
+      </div>
+    </div>
+
+    <!-- Mission Data Showcase Section -->
+    <div id="mission-data" class="card mt-4">
+      <div class="card-header">
+        Mission Data Showcase
+      </div>
+      <div class="card-body">
+        <!-- Add your mission data showcase here -->
+        <p>Live Tracking of Satellite Positions</p>
+        <!-- Interactive visualization can be added here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Add your custom JavaScript here
+    // Countdown Timer
+    function countdown() {
+      // Set the date for the next launch
+      var launchDate = new Date('2024-03-01T00:00:00Z').getTime();
+      var now = new Date().getTime();
+
+      // Find the distance between now and the launch date
+      var distance = launchDate - now;
+
+      // Time calculations for days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "Mission Launched!";
+      }
+    }
+
+    // Update countdown every second
+    var countdownInterval = setInterval(countdown, 1000);
+  </script>
+</body>
+</html>
